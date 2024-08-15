@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap" rel="stylesheet">
+  <title>AlBaath Marks</title>
+</head>
+
+<body class="bg-beige text-lg min-h-screen grid grid-rows-[min-content,1fr,min-content]">
+  <header class="text-center py-4 font-bold bg-white border border-b-black w-full">
+    <h1 class="font-title text-2xl">حساب المعدل - بوت العلامات</h1>
+  </header>
+  <main class="grid">
+    <section class="py-16">
+      <div class="w-[30rem] max-w-full mx-auto px-4">
+        <div>
+          <form id="search-form">
+            <div class="mb-4">
+              <label for="search-input" class="block mb-2">الرقم الامتحاني</label>
+              <input id="search-input" type="text" class="w-full px-4 py-2 mb-1 bg-white border border-black"
+                pattern="^([\u0621-\u064A\s]+)|([0-9]+)$" required>
+              <span class="block text-red-500 text-xs">أدخل اسمك أو رقمك الامتحاني</span>
+            </div>
+            <button type="submit" form="search-form"
+              class="bg-amber-300 w-full py-2 border border-black hover:opacity-80 focus:opacity-100 mb-4">بحث</button>
+          </form>
+        </div>
+        <div>
+          <table class="search-table mx-auto w-full">
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>عبد الرحمن رحال</td>
+              <td>3304</td>
+            </tr>
+            <tr>
+              <td>عبد الرحمن رحال</td>
+              <td>3304</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-4">
+      <table class="border-collapse w-full max-w-[60rem] mx-auto border-2 border-black text-center">
+        <caption>
+          السنة الأولى - الفصل الأول
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">رياضيات ١</th>
+            <th scope="col">دارات ١</th>
+            <th scope="col">برمجة ١</th>
+            <th scope="col">مبادئ ١</th>
+            <th scope="col">عربي</th>
+            <th scope="col">ثقافة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">العلامة</th>
+            <td>78</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" class="bg-lime-100">المعدل</th>
+            <td>68</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+  <footer class="text-center text-sm border border-t-black">
+    واجهة لبوت العلامات
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
